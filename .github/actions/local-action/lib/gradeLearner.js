@@ -12,14 +12,6 @@ module.exports = async () => {
   });
 
   const installations = res.data;
-  // const stringifiedInstallations = JSON.stringify(installations);
-
-  // "total_count": 0,
-  // "installations": [
-  // {
-  //   "repository_selection": "all",
-
-  // ]
 
   try {
     // check for value in array

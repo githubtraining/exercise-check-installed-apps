@@ -1,5 +1,9 @@
 name: Grading workflow
-on: push
+on:
+  push:
+    paths:
+      - grading_config.yml
+  workflow_dispatch:
 
 jobs:
   grade-learner:

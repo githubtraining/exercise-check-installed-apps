@@ -2,7 +2,7 @@ name: "local-action"
 description: Grading action for local exercise
 author: githubtraining
 inputs:
-  token:
+  exercise-token:
     description: GITHUB_TOKEN used to access the API
     required: true
 

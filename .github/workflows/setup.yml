@@ -1,0 +1,13 @@
+name: Initial repo configuration
+#on: push
+
+jobs:
+  setup-repo:
+    runs-on: ubuntu-latest
+    if: github.event.commits[0].message == 'Initial commit' && github.repository != 'githubtraining/exercise-check-installed-apps'
+    steps:
+    #   - name: Checkout repo
+    #     uses: actions/checkout@v2
+
+    #   - name: Configure exercise
+    #     uses: githubtraining/stage-commits-action@main

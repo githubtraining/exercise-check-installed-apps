@@ -1,0 +1,22 @@
+name: CI for local local-action
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  run-tests:
+    if: github.repository == 'githubtraining/exercise-check-installed-apps'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .github/actions/local-action
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: run tests
+        run: npm run test

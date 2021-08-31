@@ -1,0 +1,24 @@
+{
+  "name": "local-action",
+  "version": "1.0.0",
+  "description": "Local exercise action to verify the desire commit was removed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubtraining/exercise-check-installed-apps.git"
+  },
+  "author": "githubtraining",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/githubtraining/exercise-check-installed-apps/issues"
+  },
+  "homepage": "https://github.com/githubtraining/exercise-check-installed-apps#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}

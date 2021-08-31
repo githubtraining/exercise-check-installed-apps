@@ -1,0 +1,27 @@
+name: Grading workflow
+on: push
+
+jobs:
+  grade-learner:
+    if: github.event_name == 'push' # Apply additional filters as needed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Grade exercise-check-installed-apps activity
+        id: events
+        uses: ./.github/actions/local-action
+        with:
+          exercise-token: ${{secrets.EXERCISE_PAT}}
+
+      - name: Grading results
+        uses: githubtraining/looking-glass-action@v1.0.0
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          feedback: ${{ steps.events.outputs.reports }}
+  troubleshoot-activity:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: troubleshooting steps
+        run: echo "" #Help the user to troubleshoot the activity

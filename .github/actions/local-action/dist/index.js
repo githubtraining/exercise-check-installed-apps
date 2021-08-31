@@ -6192,6 +6192,10 @@ const gradeLearner = __webpack_require__(244);
 
 async function run() {
   try {
+    const token = core.getInput("exercise-token");
+    if (!token) {
+      throw "You didn't supply a valid EXERCISE_PAT at the organization level";
+    }
     const results = await gradeLearner();
     core.setOutput("reports", results);
   } catch (error) {

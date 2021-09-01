@@ -1,4 +1,4 @@
-# Welcome to the exercise-check-installed-apps exercise!
+# Welcome to the exercise on installing GitHub Apps!
 
 This exercise checks your ability to manage GitHub Apps for your organization. It is automatically graded via a workflow once you have completed the instructions.
 
@@ -79,3 +79,5 @@ Links used throughout this README:
 [_Creating a personal access token_ in GitHub Docs]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
 [_Available scopes_ in GitHub Docs]: https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes
 [_Encrypted secrets_ in Github Docs]: https://docs.github.com/en/actions/reference/encrypted-secrets
+[about billing for github actions]: https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions
+[running a workflow on github]: https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow#running-a-workflow-on-github

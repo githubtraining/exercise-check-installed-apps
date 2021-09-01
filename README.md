@@ -10,9 +10,9 @@ This exercise checks your ability to manage GitHub Apps for your organization. I
 
 :information_source: The use of GitHub Actions also means that it may take the grading workflow a few seconds and sometimes minutes to run.
 
-:closed_lock_with_key: This exercise asks you to create a personal access token (PAT). This step is a prerequisite of the exercise, and you should already be comfortable with PATs on GitHub before proceeding. The PAT is encrypted and used only by a local action that does not leave your repository. GitHub has safeguards in place if the PAT is exposed by mistake, but you should know that if someone gains access to your PAT, they would have the same access you've given the token. To be safe, we recommend setting an expiration for the token. If you'd like to learn more about how your PAT is used, check the action's documentation in [`.github/actions/`](.github/actions/), _[Personal Access Token - GitHub Docs]_, and _[token scopes]_.
+:closed_lock_with_key: This exercise asks you to create a personal access token (PAT). This step is a prerequisite of the exercise, and you should already be comfortable with PATs on GitHub before proceeding. The PAT is encrypted and used only by a local action that does not leave your repository. GitHub has safeguards in place if the PAT is exposed by mistake, but you should know that if someone gains access to your PAT, they would have the same access you've given the token. To be safe, we recommend setting an expiration for the token. If you'd like to learn more about how your PAT is used, check the action's documentation in [`.github/actions/`](.github/actions/), [_Creating a personal access token_ in GitHub Docs], and [_Available scopes_ in GitHub Docs].
 
-:busts-in-silhouette: This exercise needs to be completed in an organization. We recommend you [create a new organization](https://github.com/account/organizations/new?coupon=&plan=team_free) for free. If you choose to use an existing organization, note that this exercise will ask you to adjust settings in the organization that may have unintended effects on existing repositories or organization members. 
+👥 This exercise needs to be completed in an organization. We recommend you [create a new organization](https://github.com/account/organizations/new?coupon=&plan=team_free) for free. If you choose to use an existing organization, note that this exercise will ask you to adjust settings in the organization that may have unintended effects on existing repositories or organization members. 
 
 ## Instructions
 
@@ -21,8 +21,8 @@ This exercise checks your ability to manage GitHub Apps for your organization. I
 Please complete the instructions below:
 
 1. Create an organization-owned copy of this repository using the [Use this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) button. 
-2. Create a [PAT (personal access token)](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) with the `read:org` scope selected.
-3. Store the PAT as an organization secret titled `EXERCISE_PAT`.
+2. Create a personal access token (PAT) with the `read:org` scope selected.
+3. Store the PAT as an [organization secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-an-organization) titled `EXERCISE_PAT`. We recommend making the secret available only to your newly created repository.
 4. Install a GitHub App of your choice on this repository only. 
 5. If your chosen GitHub App requires a configuration file, push that file to this repository to trigger the grading workflow. If your chosen GitHub App doesn't require configuration, push any commits to this repository or change and push changes to [`grading-config.yml`](grading_config.yml) to trigger the grading workflow.
 
@@ -75,6 +75,6 @@ Links used throughout this README:
 [creating a repository from a template]: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
 
 
-[personal access token - github docs]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
-[token scopes]: https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes
+[_Creating a personal access token_ in GitHub Docs]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+[_Available scopes_ in GitHub Docs]: https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes
 [Encrypted secrets - Github Docs]: https://docs.github.com/en/actions/reference/encrypted-secrets

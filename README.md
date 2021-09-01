@@ -23,31 +23,29 @@ Please complete the instructions below:
 1. Create an organization-owned copy of this repository using the [Use this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) button. 
 2. Create a personal access token (PAT) with the `read:org` scope selected.
 3. Store the PAT as an [organization secret](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-an-organization) titled `EXERCISE_PAT`. We recommend making the secret available only to your newly created repository.
-4. Install a GitHub App of your choice on this repository only. 
+4. Install a GitHub App of your choice on this repository only.
 5. If your chosen GitHub App requires a configuration file, push that file to this repository to trigger the grading workflow. If your chosen GitHub App doesn't require configuration, push any commits to this repository or change and push changes to [`grading-config.yml`](grading_config.yml) to trigger the grading workflow.
 
 <!-- Add your steps below starting with step 2 -->
 
 ## Seeing your result
 
-Your exercise is graded automatically once you have completed the instructions. To see the result of your exercise, go to the **Actions** tab, and see the most recent run on the **Grading** workflow. <!-- specify expected Looking Glass display_type --><!-- specific place to look -->
+Your exercise is graded automatically once you have completed the instructions. To see the result of your exercise, go to the **Issues** tab, and look for an issue created by `github-actions`. <!-- specify expected Looking Glass display_type --><!-- specific place to look -->
 
 <!-- Display types:
 - actions
 - issues
  -->
 
-Below is an example of an incorrect solution and the feedback provided in the **Grading results:**
+Below is an example of an incorrect solution and the feedback provided in the issue:
 
-![image](https://user-images.githubusercontent.com/38021615/128258382-b4a79384-ce2d-4377-ae53-e37f8ca2c1a3.png)
-
-See _[Viewing workflow run history]_ if you need assistance.
+![issue with an incorrect solution](https://user-images.githubusercontent.com/16547949/131718787-19d2b2e3-18cf-4d56-bff0-28366dbe8131.png)
 
 ## Troubleshooting
 
 If you are stuck with a step in the exercise or the grading workflow does not automatically run after you complete the instructions, run the troubleshooter: in the **Actions** tab select the **Grading workflow**, click **Run workflow**, select the appropriate branch, and click the **Run workflow** button.
 
-![image](https://user-images.githubusercontent.com/38021615/128258382-b4a79384-ce2d-4377-ae53-e37f8ca2c1a3.png)
+![actions workflow showing the troubleshooting step](https://user-images.githubusercontent.com/16547949/131719496-9294f1fe-0963-4d0d-be3e-911472360f7c.png)
 
 The troubleshooter will either display useful information to help you understand what you might have done wrong in your exercise or redirect you to the documentation relevant to your exercise to help you out.
 
@@ -61,20 +59,23 @@ Resources specific to this exercise:
 
 <!-- - Add further resources for the learner -->
 
-- [Removing sensitive data from a repository] - GitHub Docs
+- [_Installing a GitHub App in your organization_ in GitHub Docs]
 
 Resources for working with exercises and GitHub Actions in general:
 
 - [Creating a repository from a template]
+- [_Creating a personal access token_ in GitHub Docs]
+- [_Available scopes_ in GitHub Docs]
+- [_Encrypted secrets_ in Github Docs]
 
 <!--
 Links used throughout this README:
 -->
 <!-- Edit the links below to be relevant -->
 
+[_Installing a GitHub App in your organization_ in GitHub Docs]: https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization
+
 [creating a repository from a template]: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
-
-
 [_Creating a personal access token_ in GitHub Docs]: https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
 [_Available scopes_ in GitHub Docs]: https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes
-[Encrypted secrets - Github Docs]: https://docs.github.com/en/actions/reference/encrypted-secrets
+[_Encrypted secrets_ in Github Docs]: https://docs.github.com/en/actions/reference/encrypted-secrets

@@ -1,4 +1,4 @@
-# Welcome to the exercise on installing GitHub Apps!
+# Welcome to the exercise on installing GitHub Apps!!
 
 This exercise checks your ability to manage GitHub Apps for your organization. It is automatically graded via a workflow once you have completed the instructions.
 

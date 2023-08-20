@@ -22,7 +22,7 @@ Please complete the instructions below:
 
 1. Create an organization-owned copy of this repository using the [Use this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) button. 
 2. Create a personal access token (PAT) of type **classic tokens** with the `read:org` and `write:org` scope selected.
-3. Store the PAT as an [organization secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) titled `EXERCISE_PAT` in actions tab. We recommend making the secret available only to your newly created repository.
+3. Store the PAT as an [organization secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) titled `EXERCISE_PAT` in actions tab. We recommend making the secret available only to your newly created repository. Then go to organizaion setting and from **Actions** tab -> **General** set the Workflow permissions to `read and write permissions`.
 4. Install a GitHub App of your choice on your organization and select only your repository as the installation target.
 5. If your chosen GitHub App requires a configuration file, push that file to this repository to trigger the grading workflow. If your chosen GitHub App doesn't require configuration, push any commits to this repository or change and push changes to [`grading-config.yml`](grading_config.yml) to trigger the grading workflow.
 
